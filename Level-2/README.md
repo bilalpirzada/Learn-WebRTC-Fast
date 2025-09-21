@@ -16,8 +16,8 @@ Simulate a real-time WebRTC video call between two peers inside the same browser
 
 ***You only need two files:***
 - webrtc-loopback/
--  /index.html
--  /main.js
+  -  /index.html
+  -  /main.js
 
 ## 🧱 Step-by-Step Instructions
 
