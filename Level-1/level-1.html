@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WebRTC Camera</title>
+</head>
+<body>
+  <h1>My Camera</h1>
+  <video id="myVideo" autoplay playsinline></video>
+
+  <script>
+    async function startCamera() {
+      const stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false });
+      document.getElementById('myVideo').srcObject = stream;
+
+      console.log(stream.getTracks())
+    }
+
+    startCamera();
+  </script>
+</body>
+</html>
