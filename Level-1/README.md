@@ -7,6 +7,10 @@
 
 ### ✅ Code Example (HTML + JS)
 
+1. Open VS code and create a file e.g level-1.html
+2. Paste the code below
+3. Open the file in browser (with live server)
+
 ```
 <html>
 <!DOCTYPE html>
