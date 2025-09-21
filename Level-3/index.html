@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WebRTC Manual Signaling</title>
+  <style>
+    video {
+      width: 300px;
+      margin: 10px;
+      border: 2px solid #333;
+      display: block;
+    }
+    textarea {
+      width: 90%;
+      height: 100px;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>WebRTC Manual Signaling</h1>
+
+  <video id="localVideo" autoplay playsinline muted></video>
+  <video id="remoteVideo" autoplay playsinline></video>
+
+  <div>
+    <button id="startBtn">Start Camera</button>
+  </div>
+
+  <h3>Create Offer (Send this to remote peer)</h3>
+  <textarea id="offerSdp"></textarea>
+  <button id="createOfferBtn">Create Offer</button>
+
+  <h3>Paste Answer from remote peer here</h3>
+  <textarea id="answerSdp"></textarea>
+  <button id="setAnswerBtn">Set Answer</button>
+
+  <h3>ICE Candidates (Optional, manual paste for simplicity)</h3>
+  <textarea id="iceCandidates"></textarea>
+  <button id="addIceBtn">Add ICE Candidate</button>
+
+  <script src="main.js"></script>
+</body>
+</html>
